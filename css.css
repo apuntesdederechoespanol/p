@@ -137,3 +137,80 @@ button {
 button:hover {
   background-color: #0066cc;
 }
+
+/* -------------------------------------Estilos menu web */
+
+/* Establecer el estilo de la lista no ordenada del menú desplegable */
+.menu-desplegable ul {
+  /* Quitar el estilo de lista por defecto */
+  list-style-type: none;
+  /* Quitar el margen y el relleno por defecto */
+  margin: 0;
+  padding: 0;
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 100%;
+}
+
+/* Establecer el estilo de los elementos de la lista del menú desplegable */
+.menu-desplegable li {
+  /* Establecer el posicionamiento relativo */
+  position: relative;
+  /* Establecer el color de fondo a azul */
+  background-color: #0099ff;
+  /* Establecer el color del texto a blanco */
+  color: #ffffff;
+  /* Establecer el tamaño del texto a 16px */
+  font-size: 16px;
+  /* Establecer el espacio interno a 10px */
+  padding: 10px;
+  /* Establecer el borde a 1px sólido azul oscuro */
+  border: 1px solid #0066cc;
+  /* Establecer el borde redondeado a 10px */
+  border-radius: 10px;
+  /* Establecer el ancho al 25% del elemento padre */
+  width: 25%;
+  /* Establecer el flotado a la izquierda */
+  float: left;
+}
+
+/* Establecer el estilo de los enlaces del menú desplegable */
+.menu-desplegable a {
+  /* Establecer el color del texto a blanco */
+  color: #ffffff;
+  /* Quitar el subrayado del texto */
+  text-decoration: none;
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 100%;
+  /* Establecer el alto al 100% del elemento padre */
+  height: 100%;
+  /* Establecer el display a bloque */
+  display: block;
+}
+
+/* Establecer el estilo de los elementos de la lista del menú desplegable cuando el usuario pasa el cursor sobre ellos */
+.menu-desplegable li:hover {
+  /* Establecer el color de fondo a azul oscuro */
+  background-color: #0066cc;
+}
+
+/* Establecer el estilo de los enlaces del menú desplegable cuando el usuario pasa el cursor sobre ellos */
+.menu-desplegable a:hover {
+  /* Establecer el color del texto a blanco */
+  color: #ffffff;
+}
+
+/* Establecer el estilo de la lista no ordenada del submenú desplegable */
+.menu-desplegable li ul {
+  /* Establecer el display a ninguno por defecto */
+  display: none;
+  /* Establecer el posicionamiento absoluto */
+  position: absolute;
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 100%;
+}
+
+/* Establecer el estilo de la lista no ordenada del submenú desplegable cuando el usuario pasa el cursor sobre el elemento padre */
+.menu-desplegable li:hover > ul {
+  /* Establecer el display a bloque */
+  display: block;
+}
