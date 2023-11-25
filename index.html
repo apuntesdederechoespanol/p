@@ -7,55 +7,26 @@
   <link rel="stylesheet" href="css.css">
 </head>
 <body>
-  <!-- Crear el elemento div con la clase "menu-desplegable" -->
-  <div class="menu-desplegable">
-    <!-- Crear el área de navegación -->
-    <nav>
-      <!-- Crear la lista no ordenada de las opciones del menú -->
-      <ul>
-        <!-- Crear el primer elemento de la lista -->
-        <li>
-          <!-- Crear el enlace a la página de inicio -->
-          <a href="index.html">Inicio</a>
-        </li>
-        <!-- Crear el segundo elemento de la lista -->
-        <li>
-          <!-- Crear el enlace a la página de quién soy -->
-          <a href="">Quién soy</a>
-          <!-- Crear el menú desplegable con otras opciones -->
-          <ul>
-            <!-- Crear el primer elemento del menú desplegable -->
-            <li>
-              <!-- Crear el enlace a la página de mi historia -->
-              <a href="mi-historia.html">Mi historia</a>
-            </li>
-            <!-- Crear el segundo elemento del menú desplegable -->
-            <li>
-              <!-- Crear el enlace a la página de mi trabajo -->
-              <a href="mi-trabajo.html">Mi trabajo</a>
-            </li>
-            <!-- Crear el tercer elemento del menú desplegable -->
-            <li>
-              <!-- Crear el enlace a la página de mi pasión -->
-              <a href="mi-pasion.html">Mi pasión</a>
-            </li>
-          </ul>
-        </li>
-        <!-- Crear el tercer elemento de la lista -->
-        <li>
-          <!-- Crear el enlace a la página de contacto -->
-          <a href="contacto.html">Contacto</a>
-        </li>
-        <!-- Crear el cuarto elemento de la lista -->
-        <li>
-          <!-- Crear el enlace a la página de boletín -->
-          <a href="boletin.html">Boletín</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-
+<!-- Incluir el archivo externo del encabezado -->
+<div id="encabezado"></div>
+<script>
+  // Crear un objeto XMLHttpRequest para hacer una petición al servidor
+  var xhr = new XMLHttpRequest();
+  // Abrir la petición con el método GET y la ruta al archivo del encabezado
+  xhr.open("GET", "encabezado.html");
+  // Establecer la función que se ejecutará cuando la petición se complete
+  xhr.onload = function() {
+    // Si el estado de la petición es 200 (OK)
+    if (xhr.status == 200) {
+      // Obtener el elemento div con el id "encabezado"
+      var div = document.getElementById("encabezado");
+      // Insertar el contenido del archivo del encabezado en el elemento div
+      div.innerHTML = xhr.responseText;
+    }
+  };
+  // Enviar la petición al servidor
+  xhr.send();
+</script>
 
 
 

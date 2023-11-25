@@ -148,7 +148,7 @@ button:hover {
   margin: 0;
   padding: 0;
   /* Establecer el ancho al 100% del elemento padre */
-  width: 100%;
+  width: 75%;
 }
 
 /* Establecer el estilo de los elementos de la lista del menú desplegable */
@@ -164,13 +164,13 @@ button:hover {
   /* Establecer el espacio interno a 10px */
   padding: 10px;
   /* Establecer el borde a 1px sólido azul oscuro */
-  border: 1px solid #0066cc;
+  border: 0px solid #0066cc;
   /* Establecer el borde redondeado a 10px */
   border-radius: 10px;
   /* Establecer el ancho al 25% del elemento padre */
-  width: 25%;
+  width: 15%;
   /* Establecer el flotado a la izquierda */
-  float: left;
+  float: right;
 }
 
 /* Establecer el estilo de los enlaces del menú desplegable */
@@ -213,4 +213,124 @@ button:hover {
 .menu-desplegable li:hover > ul {
   /* Establecer el display a bloque */
   display: block;
+}
+
+
+/* Establecer el estilo del elemento div que contiene el encuadre del menú */
+.encuadre-menu {
+  /* Establecer el ancho al 80% del elemento padre */
+  width: 80%;
+  /* Establecer el margen automático para centrar el elemento */
+  margin: auto;
+  /* Establecer el borde a 1px sólido negro */
+  border: 1px solid #000000;
+}
+
+/* Establecer el estilo del elemento table que contiene el logo y el nombre del sitio web */
+.tabla-menu {
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 100%;
+  /* Establecer el borde a ninguno */
+  border: none;
+  /* Establecer el espacio entre celdas a 0 */
+  border-spacing: 0;
+}
+
+/* Establecer el estilo de los elementos td que contienen el logo y el nombre del sitio web */
+.tabla-menu td {
+  /* Establecer el borde a ninguno */
+  border: none;
+  /* Establecer el relleno a 10px */
+  padding: 10px;
+  /* Establecer el color de fondo a blanco */
+  background-color: #ffffff;
+}
+
+/* Establecer el estilo del elemento td que contiene el logo del sitio web */
+.tabla-menu td:first-child {
+  /* Establecer el ancho al auto */
+  width: auto;
+}
+
+/* Establecer el estilo del elemento td que contiene el nombre del sitio web */
+.tabla-menu td:last-child {
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 90%;
+}
+
+/* Establecer el estilo del elemento img que contiene el logo del sitio web */
+.tabla-menu img {
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 100%;
+  /* Establecer el alto al auto */
+  height: auto;
+}
+
+/* Establecer el estilo del elemento h1 que contiene el nombre del sitio web */
+.tabla-menu h1 {
+  /* Establecer el color del texto a negro */
+  color: #000000;
+  /* Establecer el tamaño del texto a 36px */
+  font-size: 36px;
+  /* Establecer el alineamiento del texto al centro */
+  text-align: center;
+}
+
+/* Establecer el estilo de la lista no ordenada */
+.tabla-menu ul {
+  /* Quitar el estilo de lista por defecto */
+  list-style-type: none;
+  /* Quitar el margen y el relleno por defecto */
+  margin: 0;
+  padding: 0;
+  /* Establecer el ancho al auto */
+  width: auto;
+}
+
+/* Establecer el estilo de los elementos de la lista */
+.tabla-menu li {
+  /* Establecer el posicionamiento relativo */
+  position: relative;
+  /* Establecer el color de fondo a azul */
+  background-color: #0099ff;
+  /* Establecer el color del texto a blanco */
+  color: #ffffff;
+  /* Establecer el tamaño del texto a 16px */
+  font-size: 16px;
+  /* Establecer el espacio interno a 10px */
+  padding: 10px;
+  /* Establecer el borde a 1px sólido azul oscuro */
+  border: 1px solid #0066cc;
+  /* Establecer el borde redondeado a 10px */
+  border-radius: 10px;
+  /* Establecer el ancho al 20% del elemento padre */
+  width: 20%;
+  /* Establecer el flotado a la izquierda */
+  float: left;
+}
+
+/* Establecer el estilo de los enlaces */
+.tabla-menu a {
+  /* Establecer el color del texto a blanco */
+  color: #ffffff
+  /* Quitar el subrayado del texto */
+  text-decoration: none;
+  /* Establecer el ancho al 100% del elemento padre */
+  width: 100%;
+  /* Establecer el alto al 100% del elemento padre */
+  height: 100%;
+  /* Establecer el display a bloque */
+  display: block;
+}
+
+/* Establecer el estilo de los elementos de la lista cuando el usuario pasa el cursor sobre ellos */
+.tabla-menu li:hover {
+  /* Establecer el color de fondo a azul oscuro */
+  background-color: #0066cc;
+}
+
+/* Establecer el estilo de los enlaces cuando el usuario pasa el cursor sobre ellos */
+.tabla-menu a:hover {
+  /* Establecer el color del texto a blanco */
+  color: #ffffff;
 }
