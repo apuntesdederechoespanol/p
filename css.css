@@ -1,0 +1,139 @@
+/* Establecer el color de fondo y la fuente de todo el documento */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Establecer el color y el tamaño de los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Establecer el color, el tamaño y el interlineado de los párrafos */
+p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Establecer el estilo de las listas ordenadas y desordenadas */
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Establecer el estilo de las imágenes */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+/* Establecer el estilo de los enlaces */
+a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Establecer el estilo de las tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 10px 0;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  text-align: left;
+  color: #666666;
+  font-size: 14px;
+}
+
+th {
+  background-color: #f0f0f0;
+  color: #333333;
+  font-weight: bold;
+}
+
+/* Establecer el estilo de los formularios */
+form {
+  margin: 10px 0;
+}
+
+label {
+  display: block;
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+input, select, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Establecer el estilo de los botones */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0099ff;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
