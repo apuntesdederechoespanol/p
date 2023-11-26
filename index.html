@@ -5,17 +5,12 @@
   <title>Mi página web</title>
   <!-- Enlazar el archivo CSS externo -->
   <link rel="stylesheet" href="https://apuntesdederechoespanol.github.io/p/webconfing/css.css">
+  <!-- Incluir la librería jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 <body>
-<script>
-  $(document).ready(function() {
-    // Cargar el archivo del encabezado
-    $("#encabezado").load("https://apuntesdederechoespanol.github.io/p/webconfing/encabezado.html");
-  });
-</script>
-
+<!-- Incluir el archivo externo del encabezado -->
+<div id="encabezado"></div>
 <!----------------Contenido pagina----------------------->
 
 
@@ -23,8 +18,12 @@
 
 
 <!---------------Fin contenido pagina-------------------->
+<div id="inferior"></div>
+<!-- Cargar los archivos externos con jQuery -->
 <script>
   $(document).ready(function() {
+    // Cargar el archivo del encabezado
+    $("#encabezado").load("https://apuntesdederechoespanol.github.io/p/webconfing/encabezado.html");
     // Cargar el archivo del inferior
     $("#inferior").load("https://apuntesdederechoespanol.github.io/p/webconfing/inferior.html");
   });
