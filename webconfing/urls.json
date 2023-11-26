@@ -1,0 +1,14 @@
+// Crear un objeto con un array de URL
+var objeto = {
+  url: [
+    "https://design.tutsplus.com/es/articles/how-to-create-a-newsletter-template-tutorials-resources--cms-35000",
+    "https://design.tutsplus.com/es/tutorials/how-to-create-a-newsletter-in-indesign-with-free-newsletter-templates--cms-35387",
+    "https://design.tutsplus.com/es/tutorials/how-to-create-a-newsletter-design-in-photoshop--cms-35201"
+  ]
+};
+
+// Convertir el objeto en una cadena JSON
+var json = JSON.stringify(objeto);
+
+// Mostrar el JSON en la consola
+console.log(json);
