@@ -1,3 +1,5 @@
+function boletin() {
+
 // Importar la biblioteca jsPDF
 import jsPDF from "jspdf";
 
@@ -66,3 +68,5 @@ for (var i = 0; i < json.url.length; i++) {
 
 // Mostrar el PDF en el navegador
 doc.output("dataurlnewwindow");
+
+}
