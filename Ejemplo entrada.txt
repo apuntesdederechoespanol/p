@@ -2,19 +2,35 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi blog de derecho</title>
+  <title>Mi página web</title>
   <!-- Enlazar el archivo CSS externo -->
   <link rel="stylesheet" href="css.css">
-  <!-- Enlazar el archivo JS externo -->
-  <script src="logo-menu.js"></script>
 </head>
 <body>
-  <!-- Insertar el logo y el menú principal desde el archivo JS -->
-  <div id="logo-menu"></div>
-  <!-- Contenido principal de la página -->
-  <div id="contenido">
-    <h1>Bienvenido a mi blog de derecho</h1>
-    <p>ECambia este h1 y p por el contenido</p>
-  </div>
+<!-- Incluir el archivo externo del encabezado -->
+<div id="encabezado"></div>
+<script>
+  // Crear un objeto XMLHttpRequest para hacer una petición al servidor
+  var xhr = new XMLHttpRequest();
+  // Abrir la petición con el método GET y la ruta al archivo del encabezado
+  xhr.open("GET", "encabezado.html");
+  // Establecer la función que se ejecutará cuando la petición se complete
+  xhr.onload = function() {
+    // Si el estado de la petición es 200 (OK)
+    if (xhr.status == 200) {
+      // Obtener el elemento div con el id "encabezado"
+      var div = document.getElementById("encabezado");
+      // Insertar el contenido del archivo del encabezado en el elemento div
+      div.innerHTML = xhr.responseText;
+    }
+  };
+  // Enviar la petición al servidor
+  xhr.send();
+</script>
+
+
+
+
+
 </body>
 </html>

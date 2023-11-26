@@ -27,10 +27,31 @@
   // Enviar la petición al servidor
   xhr.send();
 </script>
+<!----------------Contenido pagina----------------------->
 
 
 
 
 
+<!---------------Fin contenido pagina-------------------->
+<div id="inferior"></div>
+<script>
+  // Crear un objeto XMLHttpRequest para hacer una petición al servidor
+  var xhr = new XMLHttpRequest();
+  // Abrir la petición con el método GET y la ruta al archivo del encabezado
+  xhr.open("GET", "encabezado.html");
+  // Establecer la función que se ejecutará cuando la petición se complete
+  xhr.onload = function() {
+    // Si el estado de la petición es 200 (OK)
+    if (xhr.status == 200) {
+      // Obtener el elemento div con el id "inferior"
+      var div = document.getElementById("inferior");
+      // Insertar el contenido del archivo del encabezado en el elemento div
+      div.innerHTML = xhr.responseText;
+    }
+  };
+  // Enviar la petición al servidor
+  xhr.send();
+</script>
 </body>
 </html>
